@@ -209,5 +209,10 @@ def ViewAtp(request,pk1,pk2):
         'emp':emp
     }
     return render(request,'viewatp.html',context)
+
+
+
+def error404(request,exception):
+    return render(request,'error404.html')
         
 

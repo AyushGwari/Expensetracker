@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-4rMI49yG5ZIVdmg3Ufy55Z5cX0yyKzrMdxv2g=x2b2j-_gm@1n%9vk!zjqq64cj^'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -152,6 +153,13 @@ EMAIL_HOST_PASSWORD = 'eqjzucqlyzwzvfxr'  # Replace with your email password
 
 EMAIL_USE_SSL = True  # Set to True if your SMTP server uses SSL
 EMAIL_TIMEOUT = None  # Connection timeout for sending email (set to None for no timeout)
+
+
+JAZZMIN_SETTINGS = {
+    "site_logo": "img/logo.png",
+    "changeform_format": "vertical_tabs",
+    "custom_css": "admin.css",
+}
 
 
 
